@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 헤더 영역 */
+    header{
+        height:100px;
+        background-color: rgb(245,248,248);
+        position:relative;
+    }
+
+    .title{
+        position :absolute;
+        left : 10px;
+        top : 20px;
+    }
+
+    .search{
+        position : absolute;
+        right : 10px;
+        bottom:20px;
+        display: flex;
+        width: 200px;
+        height: 50px;
+    }
+    .search input{
+        width: 150px;
+        border:none;
+        outline:none;
+    }
+
+    .search img{
+        width: 55px;
+        height: 50px;
+    }
+
+    nav{
+        height:40px;
+        padding:20px;
+        background-color: rgb(232,243,243);
+    }
+
+    nav a{
+        color:black;
+        text-decoration: none;
+        padding: 5px;
+    }
+    /* Section 영역 */
+    section{
+        height:600px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-size:11px;
+    }
+    ul>li{
+        width:300px;
+        padding : 20px;
+        text-align: center;
+        border:0.5px solid rgb(255,241,241);
+        position:relative;
+    }
+    .li>img{
+        width:200px;
+        height:220px;
+    }
+    .aa1{
+        width:130px;
+        padding:10px;
+        color:red;
+        background-color: black;
+        position:absolute;
+        left:0px;
+        top:0px;
+    }
+    /* footer 영역 */
+    footer{
+        height:60px;
+        background-color: rgb(233, 239,239);
+        display:flex;
+        align-items: center;
+    }
+
+
+    .item{
+        width:33%;
+        height: 60px;
+        padding-top:40px;
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- 헤더 영역 -->
+     <header>
+        <div class="title">
+            <img src="./images/logo.png">
+        </div>
+        <div class="search">
+            <input type="text">
+            <img src="./images/검색.png">
+        </div>
+     </header>
+
+     <!-- nav 영역 -->
+     <nav>
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+        <a href="#">홈으로</a>
+     </nav>
+
+     <!-- section 영역 -->
+
+     <section>
+        <ul>
+            <li>
+                <img src="./images/img01.png">
+                <p>프로젝트기반 빅데이터분석 과정</p>
+                <div class="aa1">bigdata</div>
+            </li>
+            <li>
+                <img src="./images/img02.png">
+                <p>자바(JAVA)&안드로이드 개발자 양성과정</p>
+                <div class="aa1">Android</div>
+            </li>
+            <li>
+                <img src="./images/img03.png">
+                <p>Web기반 프론트엔드 자바개발자 양성과정</p>
+                <div class="aa1">Front</div>
+            </li>
+
+        </ul>
+     </section>
+     
+     <!-- footer 영역 -->
+        <footer>
+            <div class="item"><img src="./images/footer_acorn.png"></div>
+            <div class="item">(주)에이콘이즈 에이콘아카데미(홍대)</div>
+            <div class="item">COPYRIGHT(C) HBILAB ALL RIGHTS RESERVED</div>
+
+
+
+
+
+        </footer>
+
+
+
+
+
+
+     
+
+
+    
+
+</body>
+</html>

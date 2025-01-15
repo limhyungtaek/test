@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+
+        .menu{
+            border:1px solid black;
+            display:flex;
+        }
+        
+        .menu_item{
+            width:25%;
+            height:40px;
+            line-height: 40px;
+
+            border:1px solid black;
+            text-align: center;
+            background-color: skyblue;
+            color: white;
+
+            position:relative;
+        }
+
+        .menu_item:hover{
+            background-color: #7bbbd7;
+        }
+        
+        .hidden_menu{
+            display: none;  /* 안보이기기 */
+
+            width:50%;
+           /*  background-color: aliceblue; */
+            color:gray;
+            padding:5px;
+            box-sizing:border-box;
+            border:1px solid beige;
+            background-color: aqua;
+
+            /* 상위메뉴를 기준으로 배치치 */
+
+            position:absolute;
+            left:0px;
+            top:40px;
+            z-index: 999;
+        }
+
+        .menu_item:hover .hidden_menu{
+            display:block;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <ul class="menu">
+        <li class="menu_item">메뉴1
+            <!-- 하위메뉴 -->
+             <ul class="hidden_menu">
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+             </ul>
+        </li>
+        <li class="menu_item">메뉴2
+            <ul class="hidden_menu">
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+             </ul>
+        </li>
+        <li class="menu_item">메뉴3
+            <ul class="hidden_menu">
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+             </ul>
+        </li>
+        <li class="menu_item">메뉴4
+            <ul class="hidden_menu">
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+             </ul>
+        </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor porro necessitatibus a recusandae velit facere voluptatibus perspiciatis facilis? Totam eligendi repudiandae iusto maiores architecto quam laboriosam magnam et quod voluptates!
+    Enim labore, incidunt molestiae aliquid asperiores quisquam modi ratione omnis tenetur porro quis placeat quaerat dicta totam praesentium consectetur, harum voluptas ipsum quibusdam. Dolores magnam corrupti perferendis, beatae dicta doloremque.
+    Nesciunt quas tempore aut officia, maiores quam quaerat ullam minus, voluptatem qui ab exercitationem quae laboriosam possimus sapiente a quisquam optio hic veniam. Corrupti aspernatur ipsa minima nemo atque incidunt!
+    Sequi animi cupiditate temporibus culpa aliquid doloremque! Ut nesciunt tenetur dicta, esse minus suscipit blanditiis error voluptates deleniti placeat unde saepe eos laboriosam? Assumenda incidunt veritatis consectetur nemo. Facilis, ratione.
+    Et molestias atque, quis corporis recusandae, neque voluptate quam rem temporibus quas totam fugiat. Non sit quos nulla. Quo nihil eius velit dolor laboriosam quia culpa obcaecati, maiores illo vero?
+    Doloribus perspiciatis sed delectus voluptatem rem corrupti quibusdam? Vero iure architecto consectetur nemo quisquam eveniet! Aperiam optio modi aut vero esse molestiae officia, impedit, ea repellendus nemo suscipit nobis repellat.
+    Odit suscipit cupiditate neque, deleniti temporibus mollitia sint harum in dolores autem eaque tempore nesciunt voluptas sunt laboriosam facilis, eveniet aperiam omnis totam minima repudiandae voluptates vero veritatis? Delectus, tempora?
+    Adipisci optio quasi totam culpa cupiditate voluptatum et enim esse odio tempore id dolore possimus officiis, pariatur, commodi, tenetur nobis? Consectetur atque alias nam fuga velit ex dicta harum pariatur.
+    Repellendus sint cupiditate ab optio enim eligendi ea aperiam non magnam quae! Soluta ratione error tempore, quae deleniti, nisi, impedit magni dolores quaerat cupiditate quia excepturi in consectetur aut culpa!
+    Error sit temporibus atque tenetur mollitia praesentium esse. Aliquam voluptatem doloribus recusandae rem natus placeat quasi expedita magnam fuga fugit possimus provident iste, nobis ut omnis et quaerat? Mollitia, esse!</p>
+</body>
+</html>
